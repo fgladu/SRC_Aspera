@@ -9,7 +9,7 @@ fi
 base_dir="/dataStore/home/faspex/packages/dropboxes"
 
 # Prompt the user for folder names
-echo "Enter the names of the folders to create (separated by spaces):"
+echo "Entrez les noms des dossiers à créer (séparés par des espaces) :"
 read -r -a folder_names
 
 # Iterate over the provided folder names
@@ -31,4 +31,4 @@ for folder_name in "${folder_names[@]}"; do
   chmod 770 "$full_dir_path"
 done
 
-echo "Directories created or already existed with the specified ownership and permissions."
+echo "Répertoires créés ou existants avec les propriétaires et les autorisations spécifiés."
