@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ "$EUID" -ne 0 ]; then
-	echo "Veuillez exécuter ce script en tant que superutilisateur (root)."
-	exit
+  echo "Veuillez exécuter ce script en tant que superutilisateur (root)."
+  exit
 fi
 
 # Base directory path
@@ -18,10 +18,10 @@ for folder_name in "${folder_names[@]}"; do
 
   # Create the directory if it doesn't exist
   if [ ! -d "$full_dir_path" ]; then
-	mkdir -p "$full_dir_path"
-	echo "Created directory: $full_dir_path"
+  mkdir -p "$full_dir_path"
+  echo "Created directory: $full_dir_path"
   else
-	echo "Directory already exists: $full_dir_path"
+  echo "Directory already exists: $full_dir_path"
   fi
 
   # Set ownership to faspex:faspex
@@ -31,8 +31,4 @@ for folder_name in "${folder_names[@]}"; do
   chmod 770 "$full_dir_path"
 done
 
-<<<<<<< HEAD
 echo "Directories created or already existed with the specified ownership and permissions."
-=======
-echo "Directories created or already existed with the specified ownership and permissions."
->>>>>>> master
