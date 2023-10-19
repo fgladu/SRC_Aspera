@@ -31,4 +31,8 @@ for folder_name in "${folder_names[@]}"; do
   chmod 770 "$full_dir_path"
 done
 
+<<<<<<< HEAD
 echo "Directories created or already existed with the specified ownership and permissions."
+=======
+echo "Directories created or already existed with the specified ownership and permissions."
+>>>>>>> master
