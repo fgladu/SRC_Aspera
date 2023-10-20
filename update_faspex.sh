@@ -15,13 +15,13 @@ fi
 patch_path="/home/fgladu"
 
 # Confirm Faspex version
-current_version=$(asctl faspex:version)
-required_version="4.4.2.185316"
+#current_version=$(asctl faspex:version)
+#required_version="4.4.2.185316"
 
-if [[ "$current_version" != "$required_version" ]]; then
-	echo "Error: Current Faspex version ($current_version) does not match the required version ($required_version)."
-	exit 1
-fi
+#if [[ "$current_version" != "$required_version" ]]; then
+#	echo "Error: Current Faspex version ($current_version) does not match the required version ($required_version)."
+#	exit 1
+#fi
 
 # Stop all services
 echo "Stopping all services..."
